@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>Lista de Pessoas</h1>
+    <p>Table com lista de pessoas e idade</p>
+
+    <table>
+      <thead>
+        <tr>
+          <td><strong>Nome</strong></td>
+          <td><strong>Idade</strong></td>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(var i=0; i < list.length; i++) {%>
+          <tr>
+            <td><%= list[i].nome %></td>
+            <td><%= list[i].idade %></td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </body><br>
+  <a href="/">Back   </a>
+</html>
